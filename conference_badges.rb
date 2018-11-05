@@ -1,13 +1,17 @@
-# Write your code here.
-def badge_maker(name)
-  return "Hello, my name is #{name}."
-end
-def batch_badge_creator(array)
-  array.map do |name|
-    "Hello, my name is #{name}"
-  end
-end
-def assign_rooms(array1)
+def badge_maker(name1)
+   return "Hello, my name is #{name1}."
+ end
+
+ def batch_badge_creator(array1)
+ array2 = []
+   array1.each do |element|
+     array2.push(badge_maker(element))
+   end
+   return array2
+ end
+
+
+ def assign_rooms(array1)
  array2 = []
  counter = 1
    array1.each do |element|
