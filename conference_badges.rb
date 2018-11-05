@@ -18,6 +18,7 @@ def badge_maker(name1)
      array2.push("Hello, #{element}! You'll be assigned to room #{counter}!")
      counter += 1
    end
+   return array2
  end
 
  def printer (array1)
